@@ -30,6 +30,9 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get('/',(req,res)=>{
+  res.send('Hello Brother Your service is Live');
+})
 server.listen(3001, () => {
   console.log("Server running on http://localhost:3001");
 });
